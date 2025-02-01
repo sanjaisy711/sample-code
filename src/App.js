@@ -53,7 +53,10 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://eamengine/submit", formData);
+      const response = await axios.post(
+        "https://eamengine.com/submit",
+        formData
+      );
       console.log(response.data);
       setSnackbarMessage("registration successfully!");
       setSnackbarSeverity("success");
